@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publicar producto · AgriMarket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="app">
+<header class="barra"><a class="volver" href="panel.html" aria-label="Volver"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><h1>Publicar producto</h1></header>
+<main>
+<form class="stack" action="panel.html">
+<div class="campo"><label for="nom">Nombre del producto</label><input id="nom" type="text" placeholder="Ej.: Tomate" required></div>
+<div class="campo"><label for="cat">Categoría</label><select id="cat" required><option>Elige una categoría</option><option>Frutas</option><option>Verduras</option><option>Huevos</option><option>Miel</option></select></div>
+<div class="campo"><label for="uni">Unidad de venta</label><select id="uni" required><option>Kilo</option><option>Docena</option><option>Frasco</option></select></div>
+<div class="campo"><label for="pre">Precio de referencia (€)</label><input id="pre" type="text" inputmode="decimal" placeholder="Ej.: 1,80" required></div>
+<div class="campo"><span class="etiqueta">Foto del producto</span><a class="tarjeta centro" style="border-style:dashed" href="#">Subir foto real<br><span class="secundario">JPG o PNG, hasta 5 MB</span></a></div>
+<div class="campo"><label for="stock">Cantidad disponible (opcional)</label><input id="stock" type="text" inputmode="numeric" placeholder="Ej.: 40"></div>
+<div class="campo"><label for="desc">Descripción (opcional)</label><textarea id="desc"></textarea></div>
+<button class="btn" type="submit">Publicar</button>
+</form></main>
+<nav class="nav-inf" aria-label="Navegación principal"><a href="panel.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8l8-4 8 4v9l-8 4-8-4zM4 8l8 4 8-4M12 12v9"/></svg>Mis productos</a><a href="solicitudes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13l3-8h10l3 8v6H4zM4 13h5l1 2h4l1-2h5"/></svg>Solicitudes</a><a href="productor.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Perfil</a></nav>
+</div>
+</body>
+</html>

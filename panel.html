@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panel del productor · AgriMarket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="app">
+<header class="barra"><span class="marca">AgriMarket</span></header>
+<div class="pestanas" role="tablist"><a href="panel.html" aria-current="page">Mis productos</a><a href="solicitudes.html" >Solicitudes <span class="globo">2</span></a></div><main class="stack">
+<p style="margin:0">Hola, María</p>
+<div class="cifras"><div class="cifra"><strong>2</strong><span class="secundario">solicitudes pendientes</span></div><div class="cifra"><strong>3</strong><span class="secundario">productos publicados</span></div></div>
+<a class="btn" href="publicar.html">Publicar producto</a>
+<div class="lista">
+<div class="tarjeta stack"><div class="producto"><div class="foto t-tomate" role="img" aria-label="Foto de tomate">foto</div><div class="datos"><h3>Tomate</h3><div class="precio">1,80 € / kg</div><div class="secundario">Quedan 40 kg</div></div></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><label class="interruptor"><input type="checkbox" role="switch" checked><span class="pista"></span>Disponible</label><a href="publicar.html">Editar</a></div></div>
+<div class="tarjeta stack"><div class="producto"><div class="foto t-verde" role="img" aria-label="Foto de lechuga">foto</div><div class="datos"><h3>Lechuga</h3><div class="precio">1,20 € / kg</div><div class="secundario">Quedan 25 kg</div></div></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><label class="interruptor"><input type="checkbox" role="switch" checked><span class="pista"></span>Disponible</label><a href="publicar.html">Editar</a></div></div>
+<div class="tarjeta stack"><div class="producto"><div class="foto t-verde" role="img" aria-label="Foto de calabacín">foto</div><div class="datos"><h3>Calabacín</h3><div class="precio">1,60 € / kg</div><div class="secundario">Sin existencias</div></div></div>
+<div style="display:flex;justify-content:space-between;align-items:center"><label class="interruptor"><input type="checkbox" role="switch" ><span class="pista"></span>Agotado</label><a href="publicar.html">Editar</a></div></div>
+</div></main>
+<nav class="nav-inf" aria-label="Navegación principal"><a href="panel.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8l8-4 8 4v9l-8 4-8-4zM4 8l8 4 8-4M12 12v9"/></svg>Mis productos</a><a href="solicitudes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13l3-8h10l3 8v6H4zM4 13h5l1 2h4l1-2h5"/></svg>Solicitudes</a><a href="productor.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>Perfil</a></nav>
+</div>
+</body>
+</html>

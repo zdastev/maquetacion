@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acceder · AgriMarket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="app">
+<header class="barra"><a class="volver" href="producto.html" aria-label="Volver"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><h1>Acceder</h1></header>
+<main class="stack">
+<p>Entra para enviar tu solicitud. Volverás justo donde estabas.</p>
+<form class="stack" action="solicitud.html">
+<div class="campo"><label for="correo">Correo electrónico</label><input id="correo" type="email" autocomplete="email" required></div>
+<div class="campo"><label for="clave">Contraseña</label><div class="con-boton"><input id="clave" type="password" autocomplete="current-password" required><button type="button" aria-label="Mostrar contraseña">Ver</button></div>
+<div class="error" role="alert" hidden><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.01"/></svg>Correo o contraseña incorrectos</div></div>
+<button class="btn" type="submit">Entrar</button>
+<p class="centro" style="margin:0"><a href="acceder.html">He olvidado mi contraseña</a></p>
+</form>
+<hr style="border:0;border-top:1px solid var(--borde)">
+<a class="btn btn-sec" href="registro.html">Crear cuenta</a>
+</main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solicitud de compra · AgriMarket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="app">
+<header class="barra"><a class="volver" href="producto.html" aria-label="Volver"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><h1>Solicitud de compra</h1></header>
+<main>
+<form class="stack" action="confirmacion.html">
+<div class="tarjeta producto"><div class="foto t-tomate" role="img" aria-label="Foto del tomate">foto</div><div class="datos"><h3>Tomate</h3><div class="precio">1,80 € / kg</div><div class="secundario">María López · Riba-roja de Túria</div></div></div>
+<div class="campo"><label for="cant">Cantidad</label><div class="cantidad"><input id="cant" type="number" min="1" value="5" inputmode="numeric"><span class="unidad">kg</span></div><span class="ayuda">Pedido mínimo: 2 kg</span></div>
+<fieldset><legend>¿Cómo prefieres recibirlo?</legend>
+<div class="opcion"><input id="entrega-rec" name="entrega" type="radio" checked><label for="entrega-rec">Recoger en Riba-roja de Túria</label></div>
+<div class="opcion"><input id="entrega-dom" name="entrega" type="radio"><label for="entrega-dom">Entrega a domicilio</label></div></fieldset>
+<div class="campo cond"><label for="dir">Dirección de entrega</label><input id="dir" type="text" autocomplete="street-address"></div>
+<div class="campo"><label for="tel">Teléfono de contacto</label><input id="tel" type="tel" autocomplete="tel" required><span class="ayuda">Solo se comparte con el productor si acepta tu solicitud.</span></div>
+<div class="campo"><label for="msj">Mensaje (opcional)</label><textarea id="msj"></textarea></div>
+<div class="total"><span>Total estimado</span><strong class="precio">≈ 9,00 €</strong></div>
+<p class="secundario" style="margin:0">Precio de referencia; lo confirma el productor. Coste de entrega: a acordar con el productor.</p>
+<div class="aviso aten"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="flex:none"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg><span>Aquí no se paga nada. El pago y la entrega los acuerdas directamente con el productor.</span></div>
+<button class="btn" type="submit">Enviar solicitud</button>
+</form></main>
+
+</div>
+</body>
+</html>

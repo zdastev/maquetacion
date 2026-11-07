@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crear cuenta · AgriMarket</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="app">
+<header class="barra"><a class="volver" href="acceder.html" aria-label="Volver"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></a><h1>Crear cuenta</h1></header>
+<main class="stack">
+<div class="btn-fila"><a class="btn btn-peq" href="registro.html" aria-current="page">Soy consumidor</a><a class="btn btn-sec btn-peq" href="registro-productor.html">Soy productor</a></div>
+<form class="stack" action="solicitud.html">
+<div class="campo"><label for="n">Nombre</label><input id="n" type="text" autocomplete="name" required></div>
+<div class="campo"><label for="c">Correo electrónico</label><input id="c" type="email" autocomplete="email" required></div>
+<div class="campo"><label for="p">Contraseña</label><input id="p" type="password" autocomplete="new-password" minlength="8" required><span class="ayuda">Al menos 8 caracteres.</span></div>
+<div class="opcion"><input id="priv" type="checkbox" required><label for="priv">He leído la <a href="#">política de privacidad</a></label></div>
+<button class="btn" type="submit">Crear cuenta</button>
+</form></main>
+
+</div>
+</body>
+</html>
